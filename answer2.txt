@@ -1,0 +1,9 @@
+# Usage bash answer2.txt 
+#Returns highest earner, lowest earner, and number of females in top 10 earners
+
+echo "highest earner"
+cat wages.csv | sort -k4,4n -t\, | tail -1 | cut -d , -f 1,2,4
+echo "lowest earner"
+cat wages.csv | sort -k4,4n -t\, | grep -v "gender" | head -1 | cut -d , -f 1,2,4
+echo "number of females in top 10 earners"
+cat wages.csv | sort -k4,4n -t\, | grep -v "gender" | tail -n 10 | grep "female" | wc -l
