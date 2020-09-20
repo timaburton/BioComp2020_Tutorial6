@@ -1,6 +1,8 @@
-1. Rudy 
-2. Wall-E
-3. Movie 2 
-4. Inception
-5. Movie 3
-6. Movie 1
+<<<<<<< HEAD
+1. Wall-E
+2. Rudy
+3. Movie 2
+4. Movie 1
+5. Inception
+6. Movie 3
+>>>>>>> ab3c2504bf763e1171ebffaf51b7f2576f233c22
