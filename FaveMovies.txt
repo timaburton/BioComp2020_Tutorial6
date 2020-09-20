@@ -1,6 +1,6 @@
-1. Movie 1 
-2. Movie 2
-3. Movie 3 
-4. Wall-E
-5. Rudy
-6. Inception
+1. Rudy 
+2. Wall-E
+3. Movie 2 
+4. Inception
+5. Movie 3
+6. Movie 1
