@@ -1,0 +1,10 @@
+#Usage: bash answer3.txt
+#Calculates the difference in lowest wage between college graduates and non-college graduates
+echo "College Graduate"
+collegeGrad=$(cat wages.csv | cut -d "," -f 3-4 | grep -E "16\," | cut -d "," -f 2 | sort -n | head -n 1 | sed "s/\r//g")
+echo $collegeGrad
+echo "Non-Graduate"
+noncollegegrad=$(cat wages.csv | cut -d "," -f 3-4 | grep -E "12\," | cut -d "," -f 2 | sort -n | head -n 1 | sed "s/\r//g")
+echo $noncollegegrad
+echo "Difference between graduate and nongraduate minimums"
+echo "$collegeGrad" - "$noncollegegrad" | bc
