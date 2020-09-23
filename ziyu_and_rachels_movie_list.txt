@@ -1,6 +1,6 @@
 Coco
-High School Musical
-Life of Pi
-Now You See Me
 Inception
+Now You See Me
 Matrix
+Life of Pi
+High School Musical
