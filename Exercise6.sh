@@ -31,3 +31,5 @@ va16=$(cat wages.csv | cut -d , -f 3,4 | tr , " " | grep -E ^16 | cut -d " " -f 
 Echo Effect of Graduating College on Wages:
 echo "$va16 - $va12" | bc
 
+#love you Tim
+# -anoop and jake
