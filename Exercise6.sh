@@ -6,4 +6,17 @@ cat $1 | grep -E ^male | cut -d , -f 1,2 | tr , " " | sort -k 2n >> part1.csv
 
 uniq part1.csv
 
+#Part2 
 
+
+Echo "Highest Earner Gender, Years Experience, Wage:"
+cat wages.csv | tr , " " | cut -d " " -f 1,2,4 | sort -k 3n | tail -n 1
+
+
+Echo "Lowst Earner Gender, Years Experience, Wage:"
+cat wages.csv | tr , " " | cut -d " " -f 1,2,4 | sort -k 3n | head -n 2 | tail -n 1
+
+Echo “Number of Females in Top Ten Earners”
+cat wages.csv | tr , " " | cut -d " " -f 1,2,4 | sort -k 3n | head -n 11 | tail -n 10 | grep -w "female" | wc -l
+
+#Part3
